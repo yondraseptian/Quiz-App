@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "question": "Manakah dari berikut ini yang merupakan kegunaan utama dari State Management di React?",
+    "options": [
+      "Mengatur styling CSS secara otomatis",
+      "Mengelola dan menyinkronkan data di seluruh komponen",
+      "Membuat query database lebih cepat",
+      "Mengubah file JavaScript menjadi WebAssembly"
+    ],
+    "correctAnswer": "Mengelola dan menyinkronkan data di seluruh komponen"
+  },
+  {
+    "id": 2,
+    "question": "Hook React mana yang digunakan untuk menjalankan side effects seperti fetch data atau timer?",
+    "options": [
+      "useState",
+      "useReducer",
+      "useEffect",
+      "useRef"
+    ],
+    "correctAnswer": "useEffect"
+  },
+  {
+    "id": 3,
+    "question": "Apa fungsi utama dari Virtual DOM pada React?",
+    "options": [
+      "Menggantikan fungsi database backend",
+      "Meningkatkan kinerja pembaruan UI dengan meminimalkan manipulasi Real DOM",
+      "Menyimpan password pengguna secara aman",
+      "Menjalankan skrip Python di dalam browser"
+    ],
+    "correctAnswer": "Meningkatkan kinerja pembaruan UI dengan meminimalkan manipulasi Real DOM"
+  },
+  {
+    "id": 4,
+    "question": "Tipe data apa yang dikembalikan oleh fungsi `fetch()` di JavaScript?",
+    "options": [
+      "String",
+      "Promise",
+      "JSON Object",
+      "Array"
+    ],
+    "correctAnswer": "Promise"
+  },
+  {
+    "id": 5,
+    "question": "Dalam Zustand / Redux, fungsi yang bertugas mengubah state berdasarkan aksi yang diberikan disebut?",
+    "options": [
+      "Action / Mutator",
+      "Controller",
+      "Component",
+      "Router"
+    ],
+    "correctAnswer": "Action / Mutator"
+  },
+  {
+    "id": 6,
+    "question": "Method Array JavaScript mana yang digunakan untuk membuat array baru dengan mengubah setiap elemennya?",
+    "options": [
+      "forEach()",
+      "filter()",
+      "map()",
+      "reduce()"
+    ],
+    "correctAnswer": "map()"
+  },
+  {
+    "id": 7,
+    "question": "Apa keuntungan menggunakan TypeScript dibandingkan JavaScript biasa?",
+    "options": [
+      "Mengurangi ukuran file output secara otomatis",
+      "Menyediakan static type checking untuk mencegah bug saat compile time",
+      "Membuat aplikasi berjalan 10x lebih cepat di browser",
+      "Tidak memerlukan browser untuk menjalankan kode"
+    ],
+    "correctAnswer": "Menyediakan static type checking untuk mencegah bug saat compile time"
+  },
+  {
+    "id": 8,
+    "question": "Di React, prop khusus apa yang wajib diberikan saat melakukan iterasi list menggunakan `map()`?",
+    "options": [
+      "id",
+      "key",
+      "index",
+      "ref"
+    ],
+    "correctAnswer": "key"
+  },
+  {
+    "id": 9,
+    "question": "Keyword JavaScript mana yang digunakan untuk mendeklarasikan variabel yang nilainya tidak dapat diubah kembali (immutable reference)?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "static"
+    ],
+    "correctAnswer": "const"
+  },
+  {
+    "id": 10,
+    "question": "Fungsi bawaan JavaScript apa yang digunakan untuk menghentikan timercallback yang dibuat oleh `setInterval()`?",
+    "options": [
+      "stopInterval()",
+      "clearInterval()",
+      "cancelTimer()",
+      "resetTimeout()"
+    ],
+    "correctAnswer": "clearInterval()"
+  }
+]
