@@ -1,22 +1,51 @@
-In this project, we will be making a browser based quiz. The app will present users with a series of multiple-choice questions and after each question, the app will provide immediate feedback on whether the selected answer is correct or incorrect.
+# 🧩 Quiz Application
 
-Requirements
-As a developer, feel free to come up with a JSON based quiz the questions as you see fit.
+A dynamic, interactive frontend application built to test users on various topics using JSON-formatted question sets.
 
-The user will be initially presented with a "start" button and some detail about the quiz
+This project is part of the [roadmap.sh](https://roadmap.sh/projects/quiz-app) project ideas to practice advanced state management, component lifecycles, timers, and interactive UI feedback.
 
-When the user presses start they're presented with the first multiple choice question.
+---
 
-The questions are to be presented as cards with the answers being buttons on the card.
+## 🎯 Features & Requirements
 
-When the user selects an answer, the answer buttons are to turn red or green depending on the result. It should also show what the correct answer was.
+- **🚀 Welcome Screen:** Displays initial quiz details and a "Start" button to begin the session.
+- **🃏 Card-Based Questions:** Questions are presented sequentially inside card components with answer choices as interactive buttons.
+- **🎨 Visual Feedback:**
+  - Selecting an answer turns the button **Green** (correct) or **Red** (incorrect).
+  - Automatically highlights the correct answer if an incorrect option is chosen.
+  - Disables options once an answer is selected to prevent re-selection.
+- **📈 Real-Time Scoring:** Increments the user's score for every correct response.
+- **⏱️ Optional Question Timer (1 Minute):**
+  - Displays a 60-second countdown timer for each question.
+  - If the timer reaches zero before an attempt is made, the app skips to the next question and **decrements the score by 1**.
+- **📊 Final Score Breakdown:** Summarizes total score and provides a complete review of all questions and answers upon completion.
 
-If the user answers correctly, a score is to be incremented.
+---
 
-At the end of the quiz, the user is presented with a final score and all of the results.
+## 🛠️ Tech Stack
 
-Optionally add a timer of 1 minute to each question, if user doesn't attempt the question in that time, it should skip to next question and score should be decremented by 1.
+- **Frontend Framework:** React (Vite) / Vue / Angular
+- **State Management:** Zustand / React Context & `useReducer` / Pinia / NgRx
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS / CSS Modules / Styled Components
 
-You can use any frontend framework such as React, Vue or Angular and some state management library to handle the state.
+---
 
-After finishing this project, you will have a good understanding of managing complex states and building an app of moderate complexity using any frontend framework.
+## 📋 JSON Schema Specification
+
+The quiz questions are loaded dynamically from a JSON file. Below is the expected format for each question object:
+
+```json
+[
+  {
+    "id": 1,
+    "question": "What is the primary role of a state management library in frontend frameworks?",
+    "options": [
+      "To style UI components dynamically",
+      "To manage and synchronize application state across components",
+      "To optimize database queries",
+      "To compile JavaScript into WebAssembly"
+    ],
+    "correctAnswer": "To manage and synchronize application state across components"
+  }
+]
